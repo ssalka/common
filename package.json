@@ -1,0 +1,26 @@
+{
+  "name": "@ssalka/common",
+  "version": "0.1.0",
+  "description": "Common utils for Node.js & TypeScript projects",
+  "author": "Steven Salka <steven@ssalka.io>",
+  "repository": "github:ssalka/common",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^10.11.4",
+    "ts-loader": "^5.2.1",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.1.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "scripts": {
+    "build": "webpack",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
