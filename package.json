@@ -1,6 +1,6 @@
 {
   "name": "@ssalka/common",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Common utils for Node.js & TypeScript projects",
   "author": "Steven Salka <steven@ssalka.io>",
   "repository": "github:ssalka/common",
@@ -20,7 +20,10 @@
   },
   "scripts": {
     "build": "webpack",
-    "prepare": "npm run build",
+    "clean": "rm -rf lib",
+    "build:lib": "npm run clean && npm run build && cp package.json lib",
+    "prepare:lib": "[[ `basename $PWD` != 'lib' ]] && npm run build:lib",
+    "pub": "npm run prepare:lib && cd lib && npm publish --access=public && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
