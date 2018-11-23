@@ -19,8 +19,7 @@
   "scripts": {
     "build": "scripts/build.sh",
     "lint": "tslint -p tsconfig.json",
-    "prepare:lib": "[[ `basename $PWD` != 'lib' ]] && npm run build:lib",
-    "pub": "npm run prepare:lib && cd lib && npm publish --access=public && cd ..",
+    "deploy": "scripts/deploy.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
