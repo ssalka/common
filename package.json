@@ -17,9 +17,7 @@
     "typescript": "^3.1.1"
   },
   "scripts": {
-    "build": "tsc",
-    "clean": "rm -rf lib",
-    "build:lib": "npm run clean && npm run build && cp package.json lib",
+    "build": "scripts/build.sh",
     "prepare:lib": "[[ `basename $PWD` != 'lib' ]] && npm run build:lib",
     "pub": "npm run prepare:lib && cd lib && npm publish --access=public && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
