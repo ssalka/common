@@ -3,8 +3,12 @@ if [[ `basename $PWD` == 'lib' || `basename $PWD` != 'common' ]]; then
   exit 1
 fi
 
-echo 'Building project...'
 
+echo 'Linting project...'
+npm run lint --silent
+if [[ $? == 2 ]]; then exit 1; fi
+
+echo 'Building project...'
 rm -rf lib
 tsc
 cp package.json lib

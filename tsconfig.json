@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
-    "alwaysStrict": true,
     "baseUrl": ".",
     "declaration": true,
     "esModuleInterop": true,
     "lib": ["ES2017"],
-    "module": "commonjs",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
     "outDir": "lib",
     "sourceMap": true,
-    "target": "es5"
+    "strict": true,
+    "target": "es2015"
   },
   "include": [
     "src/**/*"
