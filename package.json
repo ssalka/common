@@ -1,6 +1,6 @@
 {
   "name": "@ssalka/common",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Common utils for Node.js & TypeScript projects",
   "author": "Steven Salka <steven@ssalka.io>",
   "repository": "github:ssalka/common",
