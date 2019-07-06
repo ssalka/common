@@ -1,6 +1,6 @@
 {
   "name": "@ssalka/common",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Common utils for Node.js & TypeScript projects",
   "author": "Steven Salka <steven@ssalka.io>",
   "repository": "github:ssalka/common",
@@ -13,13 +13,15 @@
     "ts-node": "^7.0.1",
     "tslint": "^5.18.0",
     "tslint-eslint-rules": "^5.4.0",
-    "typescript": "^3.1.1",
-    "utility-types": "^3.7.0"
+    "typescript": "^3.1.1"
   },
   "scripts": {
     "build": "scripts/build.sh",
     "lint": "tslint -p tsconfig.json",
     "deploy": "scripts/deploy.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "utility-types": "^3.7.0"
   }
 }
